@@ -1,4 +1,5 @@
 import React from "react";
+import {BrowserRouter, Link} from "react-router-dom";
 import { Layout, Menu } from 'antd';
 import {
     DesktopOutlined,
@@ -29,10 +30,12 @@ class Sidebar extends React.Component {
                     <div className="logo" />
                     <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="1" icon={<PieChartOutlined />}>
-                            Option 1
+                           option 1
                         </Menu.Item>
                         <Menu.Item key="2" icon={<DesktopOutlined />}>
-                            Option 2
+                            <BrowserRouter>
+                                <Link to={"/MainTow"}> Mansour</Link>
+                            </BrowserRouter>
                         </Menu.Item>
                         <SubMenu key="sub1" icon={<UserOutlined />} title="User">
                             <Menu.Item key="3">Tom</Menu.Item>

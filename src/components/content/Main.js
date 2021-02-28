@@ -1,7 +1,8 @@
 import React from "react";
 import {Breadcrumb, Layout} from "antd";
+import {Content} from "antd/es/layout/layout";
 
-const Content = ()=> {
+const Main = ()=> {
     return (
             <div>
                 <Layout>
@@ -19,4 +20,4 @@ const Content = ()=> {
         )
 
 }
-export default Content
+export default Main
